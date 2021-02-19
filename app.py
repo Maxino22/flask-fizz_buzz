@@ -28,7 +28,7 @@ def fizz_buzz(input):
     return input
 
 
-@app.route('/', methods=['GET'])
+@app.route('/', methods=['GET', 'POST'])
 def index():
     form = Form()
     if form.validate_on_submit():
