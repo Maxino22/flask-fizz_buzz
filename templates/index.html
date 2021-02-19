@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <title>Fizz_Buzz | Test</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="card c border-primary mb-3 mt-5">
+          <div class="card-header">
+            <h4 class="text-center"> Fizz Buzz</h4>
+          </div>
+          <div class="card-body">
+            <p class="card-text"> Hello welcome  to Fizz_buzz it works this way</p>
+            <p class="card-text"> Pick a number</p>
+            <li class="card-text"> If number is divisible by 3 it returns Fizz</li>
+            <li class="card-text"> If number is divisible by 5 it returns Buzz</li>
+            <li class="card-text"> If number is divisible by both 3 & 5 it returns Fizz_Buzz</li>
+            <li class="card-text"> If not it will return the number</li>
+
+            <form method="POST">
+              {{form.hidden_tag()}}
+              <div class="form-group col-auto">
+              {{form.fizz_buzz.label(class='form-label')}}{{form.fizz_buzz(class='form-control' )}}
+              {{form.submit(class='btn btn-primary mt-2')}}
+              </div>
+              
+    
+            </form>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
